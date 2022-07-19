@@ -3,7 +3,7 @@ from transformers import pipeline
 
 @st.cache(allow_output_mutation=True)
 def load_summarizer():
-    model = pipeline("summarization", model = 'facebook/bart-large-cnn')
+    model = pipeline("summarization")
     return model
 
 
